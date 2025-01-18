@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  
+    Document Title
+    =============================================
+    -->
+    <title>Puerto Princesa City Virtual Tour</title>
+    <!--  
+    Favicons
+    =============================================
+    -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/logo.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/logo.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicons/logo.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--  
+    Stylesheets
+    =============================================
+    
+    -->
+    <!-- Default stylesheets-->
+    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
+    <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <!-- Main stylesheet and color file-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map with Pin</title>
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      <div class="page-loader">
+        <div class="loader">Loading...</div>
+      </div>
+      <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">Puerto Princesa City</a>
+          </div>
+          <div class="collapse navbar-collapse" id="custom-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown"><a  href="index.html" >Home</a>
+              
+              </li>
+
+
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Explore</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown"><a class="dropdown-toggle" href="index_mp_fullscreen_static.html" data-toggle="dropdown">Historical Spots</a>
+                    
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="index_mp_fullscreen_static_1.html" data-toggle="dropdown">Land Tourist Attractions</a>
+                    
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="index_mp_fullscreen_static_2.html" data-toggle="dropdown">Beaches/Islands</a>
+                   
+                  
+                  <li class="dropdown"><a class="dropdown-toggle" href="index_mp_fullscreen_static_3.html" data-toggle="dropdown">Restaurants</a>
+                    
+
+                    <li class="dropdown"><a class="dropdown-toggle" href="index_mp_fullscreen_static_4.html" data-toggle="dropdown">Pools</a>
+                    
+                    </li>
+                  </li>
+                </ul>
+              </li>
+
+
+              
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Events</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown"><a class="dropdown-toggle" href="index_mp_classic_flexslider.html" data-toggle="dropdown">Cultural Festivals</a>
+                   
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="index_mp_classic_flexslider_1.html" data-toggle="dropdown">Environmental and Conservation Events                  </a>
+                    
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="index_mp_classic_flexslider_2.html" data-toggle="dropdown">Tourism and Trade Exhibitions
+                  </a>
+                    
+                  </li>
+                  
+                  <li class="dropdown"><a class="dropdown-toggle" href="index_mp_classic_flexslider_3.html" data-toggle="dropdown">Sports Tournaments and Competitions</a>
+                   
+                  </li>
+                
+                  
+                </ul>
+              </li>
+
+<!-- 1st Comment -->
+
+              <li class="dropdown"><a href="contact3.html" >Contact Us</a>
+                
+              </li> 
+
+
+
+
+
+
+
+
+              <li class="dropdown"><a  href="index_mp_classic_video_background.html" >About Puerto Princesa</a>
+                
+              </li>
+
+
+              <li class="dropdown"><a  href="about2.html" >About Us</a>
+              
+              </li>
+        <!-- 2nd Comment -->
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign in</a>
+                <ul class="dropdown-menu">
+                  <li><a href="login_register.html">SIGN UP CLIENT</a></li>
+                  <li><a href="login_register.html">SIGN IN CLIENT</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="bg-dark-30 showcase-page-header module parallax-bg" data-background="assets/images/showcase_bg.jpg">
+        <div class="titan-caption">
+          <div class="caption-content">
+            <div class="font-alt mb-30 titan-title-size-1">Puerto Princesa City Tourist Destinations</div>
+            <div class="font-alt mb-40 titan-title-size-4">Virtual Tour<br></div><a class="section-scroll btn btn-border-w btn-round" href="#demos">START TOUR</a>
+          </div>
+        </div>
+      </section>
+      <div class="main showcase-page">
+        <section class="module-extra-small bg-pink">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-md-8 col-lg-9">
+                <div class="callout-text font-alt">
+                
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </section>
+
+<!--Landing Page-->
+
+
+        <div class="main">
+          <section class="module-medium" id="about">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <h2 class="module-title font-alt">Welcome to Puerto Princesa City</h2>
+                  <div class="module-subtitle font-serif large-text">"Puerto Princesa thrives as a popular tourist destination, celebrated for its natural wonders, eco-tourism initiatives, and commitment to environmental conservation."
+                    <div class="text-center">
+                      <div class="btn-group mt-30"><a class="btn btn-border-d btn-circle" href="https://play.google.com/store/apps/details?id=com.iteracompany.puertoprincesacity"><i class="fa fa-android"></i> Play Store</a><a class="btn btn-border-d btn-circle" href="https://apps.apple.com/ph/app/puerto-princesa-city/id1460692162
+                        "><i class="fa fa-apple"></i> App Store</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="module pb-0 bg-dark s parallax-bg">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6"><img src="assets/images/landing/whychoose.png" alt=""></div>
+                <div class="col-sm-6">
+                  <h2 class="module-title font-alt align-left">Why Puerto Princesa City</h2>
+                  <p class="module-subtitle font-serif align-left">
+                    Puerto Princesa City, located in Palawan, Philippines, is a captivating destination with several compelling reasons to visit.</p>
+                  <p> The choice to visit Puerto Princesa City depends on individual preferences, interests, and the type of experience someone is seeking. Whether it's for natural wonders, cultural exploration, adventure, or relaxation, Puerto Princesa offers a diverse range of attractions that can appeal to a broad spectrum of travelers.</p><a class="btn btn-border-w btn-round video-pop-up" href="https://www.youtube.com/watch?v=U-U3yE6dyXA"><i class="icon-video"></i> Watch our video</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="module" id="alt-features">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                  <h2 class="module-title font-alt">Puerto Princesa City features</h2>
+                  <div class="module-subtitle font-serif">"Preserving Nature's Crown, Puerto Princesa's Jewel Shines Bright: Sustainable Harmony, Lush Landscapes, Community-Driven Development."</div>
+              
+                  <h3 class="module-title font-alt">MOTHER TREE, Sitio Bualbualan</h3>
+                </div>
+              
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                  <div class="alt-features-item">
+                    <div class="alt-features-icon"><span class="icon-strategy"></span></div>
+                    <h3 class="alt-features-title font-alt">Branding</h3> One of the unique aspects of Puerto Princesa's branding is its recognition as the "City in a Forest." 
+                  </div>
+                  <div class="alt-features-item">
+                    <div class="alt-features-icon"><span class="icon-tools-2"></span></div>
+                    <h3 class="alt-features-title font-alt">Development</h3>Puerto Princesa City in the Philippines has been recognized for its sustainable and eco-friendly development practices. 
+                  </div>
+                  <div class="alt-features-item">
+                    <div class="alt-features-icon"><span class="icon-target"></span></div>
+                    <h3 class="alt-features-title font-alt">Marketing</h3>Puerto Princesa City's marketing has often focused on its unique selling propositions, particularly its commitment to sustainable tourism and environmental conservation.
+                  </div>
+                  <div class="alt-features-item">
+                    <div class="alt-features-icon"><span class="icon-basket"></span></div>
+                    <h3 class="alt-features-title font-alt">Establishment</h3>Puerto Princesa's commitment to environmental conservation, there might be eco-friendly hotels and resorts that integrate sustainable practices into their operations. These establishments could focus on minimizing their ecological footprint and promoting responsible tourism.
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 hidden-xs hidden-sm">
+                  <div class="alt-services-image align-center"><img src="assets/images/landing/feature.png" alt="Feature Image"></div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                  <div class="alt-features-item">
+                    <div class="alt-features-icon"><span class="icon-camera"></span></div>
+                    <h3 class="alt-features-title font-alt">Photography</h3>Puerto Princesa City offers unique photography opportunities due to its stunning natural landscapes, cultural richness, and commitment to sustainable tourism. 
+                  </div>
+                  <div class="alt-features-item">
+                    <div class="alt-features-icon"><span class="icon-mobile"></span></div>
+                    <h3 class="alt-features-title font-alt">Technology</h3> Puerto Princesa City might explore smart city initiatives, such as the use of technology for traffic management, waste management, and public services.
+                  </div>
+                  <div class="alt-features-item">
+                    <div class="alt-features-icon"><span class="icon-linegraph"></span></div>
+                    <h3 class="alt-features-title font-alt">Destination</h3>Puerto Princesa is known as the "City in a Forest," emphasizing its commitment to maintaining a balance between urban development and the preservation of lush greenery. This unique blend of a cityscape within a natural setting sets it apart from other destinations.
+                  </div>
+                 
+                <div class="alt-features-item">
+                  <div class="alt-features-icon"><span class="icon-tools"></span></div>
+                  <h3 class="alt-features-title font-alt">Design</h3>Puerto Princesa's emphasis on environmental conservation, the city might prioritize architectural designs that blend harmoniously with the natural surroundings. 
+                </div>
+              </div>
+
+              </div>
+            </div>
+          </section>
+          <section class="module-small free-trial">
+            <div class="container text-center">
+              <div class="row">
+               
+            </div>
+          </section>
+          <section>
+            <div class="container">
+              <div class="row landing-image-text">
+                <div class="col-sm-6 col-sm-push-6"><br><img class="center-block" src="assets/images/landing/ipad.png" alt=""></div>
+                <div class="col-sm-6 col-sm-pull-6">
+                  <h2 class="font-alt">Keep the conversation going</h2>
+                  <p>Feel free to connect with us by clicking the "Contact Us" button on our website. We value your feedback, inquiries, and are here to assist you in any way we can. Whether you have questions about our products, services, or just want to share your thoughts, our dedicated team is ready to respond. Your communication is important to us, and we look forward to hearing from you. Click the "Contact Us" button now and start a conversation. Your input helps us enhance your experience, and we appreciate the opportunity to connect with you directly.</p>
+                  <a class="btn btn-border-d btn-circle" href="contact3.html">CONTACT US</a>
+                </div>
+              </div>
+              <div class="row landing-image-text">
+                <div class="col-sm-6"><img class="center-block" src="assets/images/landing/iphone-mockup.png" alt=""></div>
+                <div class="col-sm-6">
+                  <h2 class="font-alt">How it works</h2>
+                  <p class="font-serif">A 360 Virtual Tour is an immersive and interactive experience that allows users to explore a location remotely as if they were physically present. Here's how a 360 Virtual Tour could work to promote Puerto Princesa City's tourism:</p>
+                  <ul>
+                    <li>Engaging Content: A 360 Virtual Tour offers engaging and visually compelling content. It allows potential visitors to virtually navigate through key attractions in Puerto Princesa, such as the Underground River, cultural sites, beaches, and lush landscapes. This immersive experience can captivate the audience's attention and spark interest in planning a visit.</li>
+                    <li>Showcasing Attractions: The technology enables the showcasing of iconic landmarks and natural wonders in Puerto Princesa City. Users can virtually "walk through" attractions, providing a realistic preview of what they can expect when they visit. This can include the interiors of historical sites, the scenic beauty of the Underground River, or panoramic views of the city.</li>
+                    <li>Interactive Exploration: Users have the freedom to explore at their own pace. They can navigate in any direction, zoom in on points of interest, and interact with specific elements in the environment. This interactivity adds a sense of personalization to the virtual experience.</li>
+                    <li>Informative Descriptions: Incorporating informative descriptions, pop-up information, or audio guides within the virtual tour can provide users with valuable details about each location. This helps in educating potential tourists about the cultural and historical significance of different sites in Puerto Princesa.</li>
+                  
+
+                  </ul><a class="btn btn-border-d btn-circle" href="#">TUTORIAL</a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+        <section class="module-medium" id="demos">
+          <div class="container">
+            <div class="row multi-columns-row">
+              <div class="col-md-4 col-sm-6 col-xs-12"><a class="content-box" href="index_mp_fullscreen_static.html">
+                  <div class="content-box-image"><img src="assets/images/screenshots/main_demo.jpg" alt="Main Demo"></div>
+                  <h3 class="content-box-title font-serif">Historical Spots</h3></a></div>
+              <div class="col-md-4 col-sm-6 col-xs-12"><a class="content-box" href="index_mp_fullscreen_static_1.html">
+                  <div class="content-box-image"><img src="assets/images/screenshots/agency.jpg" alt="Agency"></div>
+                  <h3 class="content-box-title font-serif">Land Tourist Attractions</h3></a></div>
+              <div class="col-md-4 col-sm-6 col-xs-12"><a class="content-box" href="index_mp_fullscreen_static_2.html">
+                  <div class="content-box-image"><img src="assets/images/screenshots/portfolio.jpg" alt="Portfolio"></div>
+                  <h3 class="content-box-title font-serif">Beaches/Islands</h3></a></div>
+              <div class="col-md-4 col-sm-6 col-xs-12"><a class="content-box" href="index_mp_fullscreen_static_3.html">
+                  <div class="content-box-image"><img src="assets/images/screenshots/landing.jpg" alt="Landing"></div>
+                  <h3 class="content-box-title font-serif">Restaurants</h3></a></div>
+                  <div class="col-md-4 col-sm-6 col-xs-12"><a class="content-box" href="index_mp_fullscreen_static_4.html">
+                      <div class="content-box-image"><img src="assets/images/screenshots/finance.jpg" alt="Finance"></div>
+                  <h3 class="content-box-title font-serif">Poools</h3></a></div>
+                
+                  
+                   
+                
+            </div>
+          </div>
+        </section>
+        <section class="module-extra-small bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-md-8 col-lg-9">
+                <div class="callout-text font-alt">
+                 
+                  <p style="margin-bottom: 0px;">&copy; 2023 Puerto Princesa Tourist Destinations. All rights reserved.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+    </main>
+    <!--  
+    JavaScripts
+    =============================================
+    -->
+    <script src="assets/lib/jquery/dist/jquery.js"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/lib/wow/dist/wow.js"></script>
+    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/lib/smoothscroll.js"></script>
+    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    
+                 
+  </body>
+</html>
